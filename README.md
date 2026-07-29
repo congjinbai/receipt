@@ -1,2 +1,0 @@
-# receipt
-Receipt site
