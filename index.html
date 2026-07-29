@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Receipt</title>
+    <style>
+        body{font-family:Arial;margin:30px;}
+        .receipt{max-width:420px;border:1px solid #333;padding:20px;margin:0 auto;}
+    </style>
+</head>
+<body>
+    <div class="receipt">
+        <h2>Квитанция / Receipt</h2>
+        <hr>
+        <p>Дата: <span id="date"></span></p>
+        <p>Сумма: ____________</p>
+        <p>Описание: ____________</p>
+        <hr>
+        <p>Подпись ________________</p>
+    </div>
+    <script>
+        document.getElementById('date').innerText = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
